@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardDescription.text = "Welcome to the Oracle"
+        cardDescription.text = "Welcome to the Oracle!"
     }
 
    
