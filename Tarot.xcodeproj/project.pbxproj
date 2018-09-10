@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A17FB8921461BCD006B02C2 /* MajorArcanaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17FB8821461BCD006B02C2 /* MajorArcanaCard.swift */; };
 		6A8C5E10210552B400FD820E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8C5E0F210552B400FD820E /* AppDelegate.swift */; };
 		6A8C5E12210552B400FD820E /* OracleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8C5E11210552B400FD820E /* OracleController.swift */; };
 		6A8C5E15210552B400FD820E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8C5E13210552B400FD820E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A17FB8821461BCD006B02C2 /* MajorArcanaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorArcanaCard.swift; sourceTree = "<group>"; };
 		6A8C5E0C210552B400FD820E /* Tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8C5E0F210552B400FD820E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A8C5E11210552B400FD820E /* OracleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				6AEDD52B210DCDB600C330E1 /* Model.swift */,
+				6A17FB8821461BCD006B02C2 /* MajorArcanaCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AEDD52C210DCDB600C330E1 /* Model.swift in Sources */,
+				6A17FB8921461BCD006B02C2 /* MajorArcanaCard.swift in Sources */,
 				6A8C5E12210552B400FD820E /* OracleController.swift in Sources */,
 				6A8C5E10210552B400FD820E /* AppDelegate.swift in Sources */,
 			);
