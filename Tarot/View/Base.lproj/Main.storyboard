@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,9 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="tUf-Na-CC8">
-                                <rect key="frame" x="57" y="40" width="300" height="519"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think of a question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7H-9v-vFk">
                                 <rect key="frame" x="57" y="559" width="300" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -34,20 +32,35 @@
                                     <action selector="respond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHd-Iq-z3c"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukt-gz-mrb" userLabel="PlaceHolder">
+                                <rect key="frame" x="57" y="40" width="300" height="519"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="tUf-Na-CC8">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="519"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tUf-Na-CC8" secondAttribute="trailing" id="4hW-rv-KVA"/>
+                                    <constraint firstAttribute="bottom" secondItem="tUf-Na-CC8" secondAttribute="bottom" id="OFB-zC-ZKe"/>
+                                    <constraint firstAttribute="width" constant="300" id="QRm-DV-ouU"/>
+                                    <constraint firstItem="tUf-Na-CC8" firstAttribute="leading" secondItem="Ukt-gz-mrb" secondAttribute="leading" id="XL0-ir-Epz"/>
+                                    <constraint firstItem="tUf-Na-CC8" firstAttribute="top" secondItem="Ukt-gz-mrb" secondAttribute="top" id="mTW-6X-NtE"/>
+                                    <constraint firstAttribute="width" secondItem="Ukt-gz-mrb" secondAttribute="height" multiplier="100:173" id="s3I-cI-VAU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SON-s7-jnC" firstAttribute="trailing" secondItem="tUf-Na-CC8" secondAttribute="trailing" id="0rr-QM-q3l"/>
-                            <constraint firstItem="I7H-9v-vFk" firstAttribute="top" secondItem="tUf-Na-CC8" secondAttribute="bottom" id="0sm-e7-CDt"/>
-                            <constraint firstItem="tUf-Na-CC8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5hP-s4-x4V"/>
-                            <constraint firstItem="SON-s7-jnC" firstAttribute="leading" secondItem="tUf-Na-CC8" secondAttribute="leading" id="7qm-EL-Nsb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tUf-Na-CC8" secondAttribute="bottom" constant="177" id="I0X-Uz-Ldg"/>
-                            <constraint firstItem="I7H-9v-vFk" firstAttribute="leading" secondItem="tUf-Na-CC8" secondAttribute="leading" id="ISy-PQ-xkh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SON-s7-jnC" secondAttribute="bottom" constant="20" id="fWS-O5-e49"/>
-                            <constraint firstItem="I7H-9v-vFk" firstAttribute="trailing" secondItem="tUf-Na-CC8" secondAttribute="trailing" id="kGJ-Wf-AHp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tUf-Na-CC8" secondAttribute="trailing" constant="57" id="pGn-J6-cOt"/>
-                            <constraint firstItem="tUf-Na-CC8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pfe-mb-in3"/>
-                            <constraint firstItem="tUf-Na-CC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="taf-Xc-knJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SON-s7-jnC" secondAttribute="bottom" constant="20" id="9kF-AX-2RB"/>
+                            <constraint firstItem="Ukt-gz-mrb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EnW-Q3-cS3"/>
+                            <constraint firstItem="Ukt-gz-mrb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ObX-Tq-GEy"/>
+                            <constraint firstItem="I7H-9v-vFk" firstAttribute="top" secondItem="Ukt-gz-mrb" secondAttribute="bottom" id="Teh-l2-xPt"/>
+                            <constraint firstItem="I7H-9v-vFk" firstAttribute="leading" secondItem="Ukt-gz-mrb" secondAttribute="leading" id="Z1S-QL-ekT"/>
+                            <constraint firstItem="SON-s7-jnC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="gvp-kH-lkI"/>
+                            <constraint firstItem="I7H-9v-vFk" firstAttribute="trailing" secondItem="Ukt-gz-mrb" secondAttribute="trailing" id="s5y-bx-PLO"/>
+                            <constraint firstItem="SON-s7-jnC" firstAttribute="trailing" secondItem="Ukt-gz-mrb" secondAttribute="trailing" id="vrt-q6-CDh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ukt-gz-mrb" secondAttribute="bottom" constant="177" id="xBk-j2-9Fu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -58,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="-67"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-67.663043478260875"/>
         </scene>
     </scenes>
     <resources>

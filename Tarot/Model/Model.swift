@@ -12,7 +12,7 @@ class Model {
     let majorArcanaCards:[String:MajorArcanaCard]
     
     init () {
-        majorArcanaCards = MajorArcanaCard.createDeck()
+        majorArcanaCards = MajorArcanaCard.getCardDictionary()
     }
     
     var currentCard:MajorArcanaCard = MajorArcanaCard.fool
