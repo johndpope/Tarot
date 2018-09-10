@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OracleController: UIViewController {
     
     var model:Model = Model()
     
