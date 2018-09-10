@@ -38,15 +38,36 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="tUf-Na-CC8">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="519"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKB-Z4-uBX" userLabel="faded">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="519"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3K-Df-6QH" userLabel="description">
+                                        <rect key="frame" x="5" y="5" width="290" height="509"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tUf-Na-CC8" secondAttribute="trailing" id="4hW-rv-KVA"/>
+                                    <constraint firstItem="f3K-Df-6QH" firstAttribute="top" secondItem="Ukt-gz-mrb" secondAttribute="top" constant="5" id="927-fJ-n3z"/>
+                                    <constraint firstItem="RKB-Z4-uBX" firstAttribute="top" secondItem="Ukt-gz-mrb" secondAttribute="top" id="Ao7-nq-LqG"/>
+                                    <constraint firstItem="f3K-Df-6QH" firstAttribute="leading" secondItem="Ukt-gz-mrb" secondAttribute="leading" constant="5" id="BHa-l8-Ekb"/>
+                                    <constraint firstAttribute="trailing" secondItem="RKB-Z4-uBX" secondAttribute="trailing" id="KPb-NK-PYF"/>
                                     <constraint firstAttribute="bottom" secondItem="tUf-Na-CC8" secondAttribute="bottom" id="OFB-zC-ZKe"/>
+                                    <constraint firstAttribute="bottom" secondItem="f3K-Df-6QH" secondAttribute="bottom" constant="5" id="QLw-aI-y94"/>
                                     <constraint firstAttribute="width" constant="300" id="QRm-DV-ouU"/>
                                     <constraint firstItem="tUf-Na-CC8" firstAttribute="leading" secondItem="Ukt-gz-mrb" secondAttribute="leading" id="XL0-ir-Epz"/>
+                                    <constraint firstAttribute="bottom" secondItem="RKB-Z4-uBX" secondAttribute="bottom" id="d0L-Cu-YVe"/>
                                     <constraint firstItem="tUf-Na-CC8" firstAttribute="top" secondItem="Ukt-gz-mrb" secondAttribute="top" id="mTW-6X-NtE"/>
+                                    <constraint firstAttribute="trailing" secondItem="f3K-Df-6QH" secondAttribute="trailing" constant="5" id="n5z-Qa-hpg"/>
                                     <constraint firstAttribute="width" secondItem="Ukt-gz-mrb" secondAttribute="height" multiplier="100:173" id="s3I-cI-VAU"/>
+                                    <constraint firstItem="RKB-Z4-uBX" firstAttribute="leading" secondItem="Ukt-gz-mrb" secondAttribute="leading" id="vXY-sY-ggW"/>
                                 </constraints>
                             </view>
                         </subviews>
