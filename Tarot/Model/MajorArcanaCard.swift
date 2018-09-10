@@ -8,19 +8,53 @@
 
 import Foundation
 
-enum MajorArcanaCard:Int {
-    case fool=1, magician, highPriestess, empress, emperor, heirophant, lovers, chariot, justice, hermit,
-    wheelOfFortune, strength, hangedMan, death, temperance, devil, tower, star, moon, sun, judgement, world
+enum MajorArcanaCard:Int
+{
+    case fool=1, magician, highPriestess, empress, emperor, heirophant, lovers, chariot, justice, hermit, wheelOfFortune, strength, hangedMan, death, temperance, devil, tower, star, moon, sun, judgement, world
+    
+    init()
+    {
+        self = .fool
+    }
+    
+    init?(number:Int) {
+        switch number {
+        case 1 : self = .fool
+        case 2: self = .magician
+        case 3: self = .highPriestess
+        case 4: self = .empress
+        case 5: self = .emperor
+        case 6: self = .heirophant
+        case 7: self = .lovers
+        case 8: self = .chariot
+        case 9: self = .justice
+        case 10: self = .hermit
+        case 11: self = .wheelOfFortune
+        case 12: self = .strength
+        case 13: self = .hangedMan
+        case 14: self = .death
+        case 15: self = .temperance
+        case 16: self = .devil
+        case 17: self = .tower
+        case 18: self = .star
+        case 19: self = .moon
+        case 20: self = .sun
+        case 21: self = .judgement
+        case 22: self = .world
+        default: return nil
+        }
+    }
+    
+    
     
     var rank:Int {
-        get {
+        get{
             return self.rawValue
         }
     }
     
     var name:String {
-        get
-        {
+        get {
             switch self
             {
             case .fool: return "Fool"
@@ -49,30 +83,19 @@ enum MajorArcanaCard:Int {
         }
     }
     
-    var hebrewLetter:Character {
+    var hebrewLetter:Character
+    {
         get {
             switch self {
-            case .fool: return "א"
-            case .magician: return "ב"
-            case .highPriestess: return "ג"
-            case .empress: return "ד"
-            case .emperor: return "ה"
-            case .heirophant: return "ו"
-            case .lovers: return "ז"
-            case .chariot: return "ח"
-            case .justice: return "ט"
-            case .hermit: return "י"
-            case .wheelOfFortune: return "כ"
-            case .strength: return "ל"
-            case .hangedMan: return "מ"
-            case .death: return "נ"
-            case .temperance: return "ס"
-            case .devil: return "ע"
-            case .tower: return "פ"
-            case .star: return "צ"
-            case .moon: return "ק"
-            case .sun: return "ר"
-            case .judgement: return "ש"
+            case .fool: return "א" case .magician: return "ב"
+            case .highPriestess: return "ג" case .empress: return "ד"
+            case .emperor: return "ה" case .heirophant: return "ו"
+            case .lovers: return "ז" case .chariot: return "ח" case .justice: return "ט"
+            case .hermit: return "י" case .wheelOfFortune: return "כ"
+            case .strength: return "ל" case .hangedMan: return "מ"
+            case .death: return "נ" case .temperance: return "ס"
+            case .devil: return "ע" case .tower: return "פ" case .star: return "צ"
+            case .moon: return "ק" case .sun: return "ר" case .judgement: return "ש"
             case .world: return "ת"
             }
         }
@@ -86,7 +109,8 @@ enum MajorArcanaCard:Int {
     
     var interpretation:String {
         get {
-            switch self {
+            switch self
+            {
             case .fool: return "Go forth with faith."
             case .magician: return "Magic is on your side."
             case .highPriestess: return "A powerful women will be part of the solution."
@@ -120,12 +144,13 @@ enum MajorArcanaCard:Int {
                 judgement, world]
     }
     
-    static func createDeck() ->[String:MajorArcanaCard] {
+    static func getCardDictionary() ->[String:MajorArcanaCard] {
         // Create a dictionary object to return to the caller
         var majorArcana:[String:MajorArcanaCard] = [:]
         
         // Iterate through all the elements of the enum and add each card
-        for card in getDeck() {
+        for card in getDeck()
+        {
             majorArcana.updateValue(card, forKey: card.name)
         }
         return majorArcana
