@@ -14,9 +14,12 @@ class OracleController: UIViewController {
     
     @IBOutlet weak var cardDescription: UILabel!
     
+    @IBOutlet weak var imgCard: UIImageView!
+    
     @IBAction func respond(_ sender: Any) {
         
         cardDescription.text = model.respond()
+        imgCard.image = UIImage (named: model.currentCardImageName)
     }
     
     override func viewDidLoad() {
