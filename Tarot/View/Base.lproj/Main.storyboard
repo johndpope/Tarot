@@ -45,7 +45,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3K-Df-6QH" userLabel="description">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3K-Df-6QH" userLabel="description">
                                         <rect key="frame" x="5" y="5" width="290" height="509"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -86,8 +86,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnOracle" destination="SON-s7-jnC" id="baU-yj-Y3K"/>
                         <outlet property="cardDescription" destination="I7H-9v-vFk" id="POL-53-LGP"/>
+                        <outlet property="detailedDescription" destination="f3K-Df-6QH" id="5bz-x7-vcp"/>
+                        <outlet property="faded" destination="RKB-Z4-uBX" id="5A9-RW-QNf"/>
                         <outlet property="imgCard" destination="tUf-Na-CC8" id="oUt-8v-f4m"/>
+                        <outlet property="placeHolder" destination="Ukt-gz-mrb" id="1nN-yj-tX1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
